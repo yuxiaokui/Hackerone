@@ -10,7 +10,7 @@ history = []
 queuelist = queue.Queue(10000)
 queuescan = queue.Queue(10000)
 
-
+'''
 for line in open("./domains.lst"):
     line = line.strip()
     try:
@@ -21,8 +21,9 @@ for line in open("./domains.lst"):
                 
     except Exception as e:
         pass
+'''
 
-#queuelist.put('http://testphp.vulnweb.com/')
+queuelist.put('https://www.taobao.com/')
 
 class Produce(threading.Thread):
     def __init__(self):
