@@ -23,7 +23,7 @@ for line in open("./domains.lst"):
         pass
 '''
 
-queuelist.put('https://www.taobao.com/')
+queuelist.put('http://alisports.com/')
 
 class Produce(threading.Thread):
     def __init__(self):
